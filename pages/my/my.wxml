@@ -1,0 +1,12 @@
+<!--pages/my/my.wxml-->
+<text>pages/my/my.wxml</text>
+<!--客服消息开始-->
+ <view>
+ <contact-button 
+  type="default-dark" 
+  size="20"
+  session-from="weapp"
+>
+</contact-button>
+ </view>
+ <!--客服消息结束-->

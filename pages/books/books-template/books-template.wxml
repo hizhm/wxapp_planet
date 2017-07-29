@@ -1,0 +1,9 @@
+<import src="../star-template/star-template.wxml" />
+<template name="bookTemplate">
+    <view  class="book-container" bindtap="goBooksDetail" data-bookid="{{bookid}}">
+        <image class="book-img" src="{{coverageUrl}}"></image>
+        <text class="book-title">{{title}}</text>
+        <!--引入star的模板-->
+        <template is="starTemplate" data="{{average:average,stars:star}}"/>   
+    </view>
+</template>

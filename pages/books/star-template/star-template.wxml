@@ -1,0 +1,10 @@
+<template name="starTemplate">
+    <view class="stars-container">
+        <view class="stars">
+            <block wx:for="{{stars}}" wx:for-item="item" wx:key="key">
+               <image src="{{item?'http://iwen.wiki/sxtstu/php/star.png':'http://iwen.wiki/sxtstu/php/chat.png'}}"></image> 
+            </block>
+        </view>
+        <text class="star-score">{{average}}</text>
+    </view>
+</template>

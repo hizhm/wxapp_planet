@@ -1,0 +1,10 @@
+<import src='../../books-template/books-template.wxml' />
+<template name="bookGridTemplate">
+  <view class="grid-container">
+    <block wx:for="{{books}}" wx:for-item="item" wx:key="key">
+      <view class="single-view-container">
+        <template is="bookTemplate" data="{{...item}}" />
+      </view>
+    </block>
+  </view>
+</template>

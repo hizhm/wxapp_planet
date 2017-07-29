@@ -1,0 +1,12 @@
+<template name="musicsCommetTemplate">
+  <view class="commet-list">
+    <view class="comment-line"></view>
+    <view class="comment-author">
+      <image class="comment-author-icon" src="{{commentIcon}}"></image>
+      <text class="comment-author-name">{{commentName}}</text>
+    </view>
+    <view class="comment-detail">
+      <text>{{commentText}}</text>
+    </view>
+  </view>
+</template>

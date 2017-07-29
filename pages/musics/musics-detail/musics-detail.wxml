@@ -1,0 +1,30 @@
+<import src="../musics-commet-template/musics-commet-template.wxml" />
+<view class="movies-detail-container">
+  <image class="head-img" src="{{articleImg1}}"></image>
+  <view class="author-time">
+    <image class="author-avatar" src="{{authorIcon}}"></image>
+    <text class="author-name">{{authorName}}</text>
+    <text class="const-text">发表于</text>
+    <text class="time">{{authorDate}}</text>
+    <image src="{{isPlayer?'../../images/earphone.png' : '../../images/eartag.png'}}" bindtap="playerMusicTap" class="music"></image>
+  </view>
+  <text class="title">{{title}}</text>
+  <view class="tool">
+    <view class="circle-img">
+      <image src="../../images/sch.png" catchtap="collectTap" wx:if="{{collected}}"></image>
+      <image src="../../images/sc.png" catchtap="collectTap" wx:else></image>
+      <image class="share-img" src="../../images/fx.png" catchtap="onShareTap"></image>
+    </view>
+    <view class="horizon"></view>
+  </view>
+  <text class="detail">{{articleText}}</text>
+  <view class="news-commet-container">
+    <view class="comment-title">评价</view>
+
+    <!--引入评论的模板开始-->
+    <block wx:for="{{comment}}" wx:for-item="item" wx:key="key">
+      <template is="musicsCommetTemplate" data="{{...item}}" />
+    </block>
+    <!--引入评论的模板结束-->
+  </view>
+</view>

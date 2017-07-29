@@ -1,0 +1,8 @@
+<view class="index-container">
+  <image class="logo" src="../images/logo.png"></image>
+  <text class="logo-title">小行星</text>
+  <text class="logo-text">我们的精神角落</text>
+  <view class="btn" bindtap="goMusics">
+    <text>Enter</text>
+  </view>
+</view>

@@ -1,0 +1,18 @@
+<!--当前视频开始  -->
+<view class="">
+     <view class="box">
+    <view class="box_top">
+      <video class="video" id="myVideo{{currentVideo.id}}" src="{{currentVideo.src}}"  controls poster="{{currentVideo.poster}}"></video>
+    </view>
+    <view class="box_title">
+      <text>{{currentVideo.title}}</text>
+    </view>
+  </view>
+</view>
+<!--当前视频结束  -->
+<!--评论列表开始  -->
+<template name="commentTemplate">
+  
+</template>
+
+<!--评论列表结束  -->

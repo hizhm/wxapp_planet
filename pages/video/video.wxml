@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<block wx:for="{{list}}">
+  <view class="box">
+    <view class="box_top">
+      <video class="video" id="myVideo{{item.id}}"src="{{item.src}}" controls="true" poster="{{item.poster}}"></video>
+    </view>
+    <view class="box_title" bindtap="goVideoDetail" data-id="{{item.id}}">
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+</block>

@@ -1,0 +1,21 @@
+<template name="musicsidTemplate">
+  <view class="articlelist">
+    <view class="author-time">
+      <image class="author-icon" src="{{authorIcon}}"></image>
+      <text class="author-name">{{authorName}}</text>
+      <text class="author-date">{{authorDate}}</text>
+    </view>
+    <text class="title">{{title}}</text>
+    <view class="imgWrap">
+      <image class="article-img1" src="{{articleImg1}}"></image>
+      <image class="article-img2" src="{{articleImg2}}"></image>
+    </view>
+    <text class="article-text">{{articleminText}}</text>
+    <view class="article-like">
+      <image class="article-like-icon" src="../images/sc.png"></image>
+      <text class="article-like-text">{{articleLikeComment}}</text>
+      <image class="article-like-icon" src="../images/fx.png"></image>
+      <text class="article-like-text">{{articleLikeSC}}</text>
+    </view>
+  </view>
+</template>

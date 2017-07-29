@@ -1,0 +1,64 @@
+.musics-commet-container {
+  width: 90%;
+  margin: 30rpx auto;
+}
+
+.commet-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-title {
+  font-size: 18px;
+  border-left: 3px solid #f67f3e;
+  padding-left: 20rpx;
+  margin-top:20rpx;
+
+}
+
+.comment-line {
+  width: 660rpx;
+  height: 1px;
+  background-color: #e5e5e5;
+  vertical-align: middle;
+  position: relative;
+  top: 46rpx;
+  margin: 0 auto;
+  z-index: -99;
+}
+
+.comment-author {
+  flex-direction: row;
+  margin-left: 30rpx;
+  margin-top: 55rpx;
+}
+
+.comment-author-icon {
+  height: 64rpx;
+  width: 64rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.comment-author-name {
+  font-size: 30rpx;
+  font-weight: 700;
+  margin-left: 20rpx;
+  vertical-align: middle;
+  color: #666;
+}
+
+.comment-detail {
+  margin:10px auto ;
+  width: 90%;
+}
+
+.comment-detail text {
+  color: #666;
+  margin-right: 30rpx;
+  margin-left: 30rpx;
+  line-height: 44rpx;
+  letter-spacing: 2px;
+  font-size: 24rpx;
+  margin-bottom: 40rpx;
+}

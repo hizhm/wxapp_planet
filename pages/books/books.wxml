@@ -1,0 +1,10 @@
+<import src="books-list-template/books-list-template.wxml" />
+<import src="books-more/books-grid-template/books-grid-template.wxml" />
+
+
+<!--默认展示的三种类型的面板-->
+<view class="book-detail">
+  <template is="booklistTemplate" data="{{...youth}}"/>
+  <template is="booklistTemplate" data="{{...biography}}"/>
+  <template is="booklistTemplate" data="{{...history}}"/>
+</view>

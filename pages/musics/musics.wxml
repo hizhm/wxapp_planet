@@ -1,0 +1,23 @@
+<import src="musics-template/musics-template.wxml"/>
+
+
+<view class="movies-container">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}">
+    <swiper-item>
+      <image src="https://img3.doubanio.com/view/music_index_banner/raw/public/banner-2430.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://img1.doubanio.com/view/music_index_banner/raw/public/banner-2439.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://img3.doubanio.com/view/music_index_banner/raw/public/banner-2441.jpg"></image>
+    </swiper-item>
+  </swiper>
+
+  <block wx:for="{{musicIndexData}}" wx:for-item="item" wx:key="key">
+    <view bindtap="goMusicDetail" data-musicsid="{{item.musicsid}}">
+      <template is="musicsidTemplate" data="{{...item}}" />
+    </view>
+  </block>
+  
+</view>

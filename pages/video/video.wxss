@@ -1,0 +1,14 @@
+/**index.wxss**/
+.box{
+  width: 100%;
+}
+.video{
+  width: 100%;
+}
+.box_title{
+  width: 80%;
+  margin: 10rpx auto;
+  font-family:"黑体","Microsoft YaHei";
+  font-size: 38rpx;
+  color: #000;
+}

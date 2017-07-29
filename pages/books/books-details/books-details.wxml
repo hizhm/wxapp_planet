@@ -1,0 +1,28 @@
+<import src="../star-template/star-template.wxml" />
+<view class="container">
+  <image class="head-img" src="{{book.bookImg}}" />
+  <view class="head-img-hover" data-src="{{book.bookImg}}">
+    <text class="main-title">{{book.title}}</text>
+    <view class="flex-row score">
+      <text class="sub-title">评分</text>
+      <template is="starTemplate" data="{{average:book.average}}" />
+    </view>
+    <text class="sub-title">作者：{{book.author}}</text>
+    <text class="sub-title">{{book.pubdate + " · "+book.publisher}}</text>
+    <text class="sub-title">价格：{{book.price}}</text>
+  </view>
+  <image class="book-img" src="{{book.bookImg}}" data-src="{{book.bookImg}}" />
+  <view class="hr"></view>
+  <view class="like">
+    <text class="plain-font">
+      作者信息：
+    </text>
+    <text class="highlight-font">
+      {{book.authorIntro}}
+    </text>
+  </view>
+  <view class="synopsis">
+    <text class="synopsis-font">目录</text>
+    <text class="summary-content">{{book.catalog}}</text>
+  </view>
+</view>
